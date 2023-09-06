@@ -14,10 +14,6 @@ CREATE TABLE medical_histories(
 );
 CREATE INDEX idx_medical_histories_id ON medical_histories(id); 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> e2bae7a56d917c1421442574c618388b94874ccd
 CREATE TABLE invoices (
     id INT PRIMARY KEY,
     generated_at TIMESTAMP,
