@@ -11,14 +11,14 @@ CREATE TABLE medical_histories(
     status VARCHAR(225)
 );
 
-CREATE TABLE envoices (
+CREATE TABLE invoices (
     id INT PRIMARY KEY,
     generated_at TIMESTAMP,
     payed_at TIMESTAMP,
     medical_history_id INT REFERENCES medical_histories(id)
 );
 
-CREATE TABLE traitments(
+CREATE TABLE treatments(
     id INT PRIMARY KEY,
     type VARCHAR(225),
     name VARCHAR(225)
