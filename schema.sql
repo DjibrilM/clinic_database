@@ -14,10 +14,7 @@ CREATE TABLE medical_histories(
 );
 CREATE INDEX idx_medical_histories_id ON medical_histories(id); 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> e2bae7a56d917c1421442574c618388b94874ccd
 CREATE TABLE invoices (
     id INT PRIMARY KEY,
     generated_at TIMESTAMP,
@@ -43,3 +40,10 @@ CREATE TABLE  invoice_items (
    traitment_id  INT REFERENCES traitments(id)
 ); 
 CREATE INDEX idx_invoice_items ON invoice_items(id); 
+
+CREATE TABLE medical_histories_has_treatments (
+  id INT PRIMARY KEY,
+  medical_history_id INT REFERENCES medical_histories(id),
+  treatment_id INT REFERENCES treatments(id)
+);
+CREATE INDEX idx_medical_histories_has_treatments_id ON medical_histories_has_treatments(id);
