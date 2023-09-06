@@ -100,7 +100,7 @@ go inside this project with:
 
 ## 👥 Author <a name="author"></a>
 
-👤 Olanike gloria
+👤 Djibril Mugisho
 
 - GitHub: [@DjibrilM](https://github.com/DjibrilM)
 - Twitter: [@DjibrilM](https://twitter.com/DjibrilMugisho/)
