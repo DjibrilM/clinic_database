@@ -5,7 +5,6 @@ CREATE TABLE patients (
 );
 CREATE INDEX idx_patients_id ON patients(id); 
 
-
 CREATE TABLE medical_histories(
     id INT  PRIMARY KEY,
     admited_at TIMESTAMP,
